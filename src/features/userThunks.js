@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { updateFavSubject, fetchUserDetails, updateUserDetails, getLibraryCards } from '../services';
+import { updateFavSubject, fetchUserDetails, updateUserDetails, getLibraryCards, fetchWishlist } from '../services';
 
 export const fetchUserData = createAsyncThunk(
   'user/fetchData',
@@ -7,10 +7,12 @@ export const fetchUserData = createAsyncThunk(
     try {
       const data = await fetchUserDetails( studentID );
       const libCards = await getLibraryCards( studentID );
+      const wishlist = await fetchWishlist( studentID );
 
       console.log(data);
       console.log(libCards);
-      return { user: data, libraryCards: libCards };
+      console.log(wishlist);
+      return { user: data, libraryCards: libCards, wishlist: wishlist };
     } catch( error ) {
       return thunkAPI.rejectWithValue( error.response );
     }

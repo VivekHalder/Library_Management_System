@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import openEye from '../../assets/icons/open-eye-password.png';
-import closeEye from '../../assets/icons/close-eye-password.png';
-import './Landing.css'; // Import the CSS file
+import openEye from '../../../assets/icons/open-eye-password.png';
+import closeEye from '../../../assets/icons/close-eye-password.png';
+import './LandingPage.css'; 
 
 function LandingPage() {
     const [isOpen, setIsOpen] = useState(false);

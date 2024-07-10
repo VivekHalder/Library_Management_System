@@ -12,7 +12,8 @@ const initialState = {
     phoneNumber: '',
     address: '',
     subjectsOfInterest: [],
-    libraryCardDetails: []
+    libraryCardDetails: [],
+    wishlist: []
   },
   loading: false,
   error: null,
@@ -65,6 +66,8 @@ const userSlice = createSlice({
         };
 
         state.details.subjectsOfInterest = action.payload?.user.favSub;
+
+        state.details.wishlist = action.payload?.user.wishlist;
 
         state.details.libraryCardDetails = action.payload?.libraryCards;
 
