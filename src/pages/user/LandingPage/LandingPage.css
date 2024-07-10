@@ -1,0 +1,102 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing__header {
+    width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.landing__sign-in-btn {
+    height: 40px;
+    width: auto;
+    margin-right: 4px;
+    border: 3px solid #761236;
+    padding: 9px 12px;
+    border-radius: 20px;
+    font-weight: 650;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing__content {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.landing__welcome-message {
+    font-size: 60px;
+    color: #761236;
+}
+
+.landing__form {
+    margin-top: 35px;
+}
+
+.landing__label {
+    width: 117px;
+    height: 26px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    color: #761236;
+}
+
+.landing__input {
+    width: 481px;
+    height: 50px;
+    padding: 2px;
+    font-size: 20px;
+    outline: 2px solid #761236;
+    border-radius: 15px;
+    background-color: #F7DADA;
+    padding-left: 6px;
+}
+
+.landing__password-container {
+    position: relative;
+    width: 481px;
+}
+
+.landing__input.landing__input--password {
+    padding-right: 40px; 
+}
+
+.landing__toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 24px; 
+    width: auto;
+    cursor: pointer;
+}
+
+.landing__forgot-password {
+    margin-top: 40px;
+    color: #761236;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.landing__buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing__button {
+    margin-top: 20px;
+    width: 481px;
+    background-color: #761236;
+    color: #F7DADA;
+    border-radius: 20px;
+    height: 50px;
+    font-weight: 700;
+}
+
+.landing__button:first-child {
+    margin-top: 30px;
+}

@@ -45,4 +45,4 @@ function SignUp() {
   )
 }
 
-export default SignUp
+export { SignUp }

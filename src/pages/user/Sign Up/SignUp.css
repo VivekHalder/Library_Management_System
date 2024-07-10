@@ -25,7 +25,6 @@
     color: #761236;
 }
 
-
 .sign_up_flow__title {
     font-size: 30px;
     color: #761236;
@@ -43,4 +42,26 @@
     border-radius: 20px;
     height: 50px;
     font-weight: 700;
+}
+
+.sign_up_flow__form {
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.profile_image__form {
+    padding: 0 110px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_image__body {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.student_details__form {
+    margin: 50px 0px 0px 80px;
 }

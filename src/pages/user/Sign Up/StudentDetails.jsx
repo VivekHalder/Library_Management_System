@@ -4,7 +4,7 @@ import './SignUp.css';
 function StudentDetails({ onButtonClick }) {
     return (
         <div className='flex justify-between'>
-            <div style={{ marginTop: '80px', marginLeft: '50px' }}>
+            <div className='student_details__form'>
                 <h2 className='sign_up_flow__page_title'>Student Details</h2>
                 <form className='personal_details__form'>
                     <label htmlFor="department" className='personal_details__form_label'>Department</label>
